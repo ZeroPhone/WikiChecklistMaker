@@ -20,7 +20,8 @@ month_name = calendar.month_name[month_num]
 year_num = datetime.now().year
 c = calendar.Calendar()
 
-doc = SimpleDocTemplate("prodcalendar_{}_{}.pdf".format(year_num, month_name.lower()), pagesize=landscape(A4),
+# !! CHANGE pagesize to allow for different sizes perhaps through input (sys.argv[2] maybe)
+doc = SimpleDocTemplate("Checklist_{}_{}.pdf".format(year_num, month_name.lower()), pagesize=landscape(A4),
                         rightMargin=72,leftMargin=72,
                         topMargin=40,bottomMargin=0)
 elements = []
