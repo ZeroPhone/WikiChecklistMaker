@@ -5,6 +5,7 @@ import shutil
 import sys
 import os
 
+
 default_url = "https://wiki.zerophone.org/index.php/Sourcing_ZeroPhone_parts"
 
 def get_wiki_page(url):
